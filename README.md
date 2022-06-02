@@ -25,42 +25,43 @@ consumir.
 
 # API endpoints
 
+Retorna todos as pessoas
 ```
 GET /persons
 Codes 200
 ```
-Retorna todos as pessoas
 
+Retorna os pessoas de acordo com o termo passado via querystring e
+paginação
 ```
 GET /persons?
 Codes 200 / 404
 ```
-Retorna os pessoas de acordo com o termo passado via querystring e
-paginação
 
+Retorna os dados de uma pessoa
 ```
 GET /persons/{id}
 Codes 200 / 404
 ```
-Retorna os dados de uma pessoa
 
+Adiciona uma nova pessoa
 ```
 POST /persons
 Codes 201 / 400
 ```
-Adiciona uma nova pessoa
 
+Atualiza os dados de uma pessoa
 ```
 PUT /persons/{id}
 Codes 200 / 400
 ```
-Atualiza os dados de uma pessoa
 
+Apaga o registro de uma pessoa
 ```
 DELETE /persons/{id}
 Codes 204 / 400
 ```
-Apaga o registro de uma pessoa
+
 
 # O que será avaliado
 •	Estrutura do código
